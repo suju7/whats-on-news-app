@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "249714736624",
+    "firebase_url": "https://project-restaurant-07-default-rtdb.firebaseio.com",
+    "project_id": "project-restaurant-07",
+    "storage_bucket": "project-restaurant-07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249714736624:android:7a8aa4f3fbe2d390503135",
+        "android_client_info": {
+          "package_name": "com.example.whatsonnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249714736624-8oeifp33feg5likmei502b1icpiedrb5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whatsonnews",
+            "certificate_hash": "3c8ffac041bb1594ff6d926b2f7d01127c46711c"
+          }
+        },
+        {
+          "client_id": "249714736624-586tjhlnpftfsdm57k86emiicl1r9gfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAINyY8INkvmuiUqhZHgOAj3QerQLETYgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249714736624-586tjhlnpftfsdm57k86emiicl1r9gfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

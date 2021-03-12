@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SettingsFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gradient_for_card_1"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabBackButton"
+        android:layout_gravity="start|top"
+        android:background="@null"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:outlineProvider="none"
+        app:backgroundTint="@color/transparent"
+        app:fabSize="normal"
+        />
+
+    <!--<com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_for_card_3"
+            app:titleTextColor="@color/white"
+            app:title="Settings"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            >
+
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="36dp"
+                android:layout_marginHorizontal="20dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/settingsHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:padding="16dp"
+                    app:layout_anchor="@id/settingsHeading"
+                    app:layout_anchorGravity="center_vertical|end"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_settings_24"
+                    android:layout_alignParentEnd="true"
+                    app:tint="@color/white"
+                    />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/ic_baseline_person_24"
+                app:startIconTint="#ABFFFFFF"
+                android:padding="8dp"
+                android:textColorHint="#D0F1F1F1"
+                app:boxStrokeColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:imeOptions="actionDone"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/usernameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+                app:startIconTint="#ABFFFFFF"
+                android:textColorHint="#D0F1F1F1"
+                app:boxStrokeColor="@color/white"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:imeOptions="actionDone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/emailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:startIconDrawable="@drawable/ic_baseline_email_24"
+                app:startIconTint="#ABFFFFFF"
+                android:textColorHint="#D0F1F1F1"
+                app:boxStrokeColor="@color/white"
+                app:endIconDrawable="@drawable/ic_baseline_lock_24"
+                app:endIconMode="custom"
+                app:endIconTint="#B7FFFFFF"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonChangeEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHANGE"
+                        android:layout_gravity="end"
+                        android:background="@color/transparent"
+                        android:textColor="@color/white"
+                        android:visibility="invisible"
+                        />
+                    <Button
+                        android:id="@+id/buttonCancelChangeEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CANCEL"
+                        android:layout_gravity="start"
+                        android:background="@color/transparent"
+                        android:textColor="@color/white"
+                        android:visibility="invisible"
+                        />
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:visibility="gone"
+                android:id="@+id/passwordBox"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColorHint="#D0F1F1F1"
+                app:boxStrokeColor="@color/white"
+                app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+                app:startIconTint="#ABFFFFFF"
+                app:passwordToggleTint="@color/white"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonChangePassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHANGE"
+                    android:layout_gravity="end"
+                    android:background="@color/transparent"
+                    android:textColor="@color/white"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/saveChanges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ImportantButtonGrey"
+                android:layout_margin="48dp"
+                android:text="Save Changes"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Logged in with : "
+                    android:textColor="@color/white"
+                    />
+
+                <ImageView
+                    android:id="@+id/loggedInMethodIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/googleg_standard_color_18"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:id="@+id/loggedInMethodText"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Google"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/loggedInMethodIcon"
+                    android:layout_marginHorizontal="8dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+   </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressIndicator"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        app:indicatorColor="@color/white"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

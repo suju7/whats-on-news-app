@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/grey_button"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="12dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/articleImageView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:text="CES 2021: ASUS ROG Unveils Updated Zephyrus G14 for 2021 - AnandTech"
+            android:id="@+id/articleTitle"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="During CES 2021&#39;s all-digital trade show, ASUS has unveiled its updated ROG Zephyrus G14 model for 2021. The new Zephyrus G14 uses AMD&#39;s latest...During CES 2021&#39;s all-digital trade show, ASUS has unveiled its updated ROG Zephyrus G14 model for 2021. The new Zephyrus G14 uses AMD&#39;s latest..."
+            android:id="@+id/articleDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:maxLines="10"
+            android:ellipsize="end"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Times of India"
+                android:id="@+id/articleSource"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:text="some time"
+                android:id="@+id/articlePublishedAt"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="end"
+                android:textColor="@color/white"
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/grey_button"
+                app:tint="@color/white"
+                android:src="@drawable/ic_bookmark_border_24px"
+                />
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

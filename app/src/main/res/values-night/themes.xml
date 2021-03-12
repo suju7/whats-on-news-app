@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/colorAccentLight</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>
+    <!-- TO ENABLE NIGHT MODE, REPLACE THE ABOVE WITH THIS CODE
+<resources xmlns:tools="http://schemas.android.com/tools">
+    &lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="Theme.Restaurant"
+        parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        &lt;!&ndash; Primary brand color. &ndash;&gt;
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        &lt;!&ndash; Secondary brand color. &ndash;&gt;
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        &lt;!&ndash; Status bar color. &ndash;&gt;
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+
+    </style>
+</resources>-->

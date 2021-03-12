@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_nav_graph"
+    app:startDestination="@id/trendingFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.whatsonnews.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_fullArticleFragment"
+            app:destination="@id/fullArticleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedNewsFragment"
+        android:name="com.example.whatsonnews.fragments.SavedNewsFragment"
+        android:label="fragment_saved_news"
+        tools:layout="@layout/fragment_saved_news" >
+        <action
+            android:id="@+id/action_savedNewsFragment_to_fullArticleFragment"
+            app:destination="@id/fullArticleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/trendingFragment"
+        android:name="com.example.whatsonnews.fragments.TrendingFragment"
+        android:label="fragment_trending"
+        tools:layout="@layout/fragment_trending" >
+        <action
+            android:id="@+id/action_trendingFragment_to_fullArticleFragment"
+            app:destination="@id/fullArticleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/personalizedFragment"
+        android:name="com.example.whatsonnews.fragments.PersonalizedFragment"
+        android:label="fragment_social"
+        tools:layout="@layout/fragment_personalized" >
+        <action
+            android:id="@+id/action_personalizedFragment_to_eachSectionFragment"
+            app:destination="@id/eachSectionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fullArticleFragment"
+        android:name="com.example.whatsonnews.fragments.FullArticleFragment"
+        android:label="fragment_full_article"
+        tools:layout="@layout/fragment_full_article" >
+        <argument
+            android:name="arg_article"
+            app:argType="com.example.whatsonnews.news.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.whatsonnews.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_savedNewsFragment"
+            app:destination="@id/savedNewsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/eachSectionFragment"
+        android:name="com.example.whatsonnews.fragments.EachSectionFragment"
+        android:label="fragment_each_section"
+        tools:layout="@layout/fragment_each_section" >
+        <action
+            android:id="@+id/action_eachSectionFragment_to_fullArticleFragment"
+            app:destination="@id/fullArticleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            />
+        <argument
+            android:name="sectionTitle"
+            app:argType="string"
+            android:defaultValue="Title" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.whatsonnews.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+</navigation>
