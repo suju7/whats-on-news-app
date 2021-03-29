@@ -115,7 +115,6 @@ class MainViewModel(
             userProfile.value!!.countryCode
         )
         trendingNewsData.postValue(verdictTrendingNews(response))
-
     }
 
     fun getSearchNews() = viewModelScope.launch {
