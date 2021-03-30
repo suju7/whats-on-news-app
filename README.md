@@ -11,7 +11,7 @@ Google's recommended [MVVM architecture](https://youtu.be/_T4zjIEkGOM?t=97), [An
 
 ## Workflow 
 
-- The user logins (or signs up for an account) and his ceredentials, preferences, etc. are stored in Firebase. Firebase Authentication and RTDB are used for this purpose.
+- The user login (or signs up for an account) and his credentials, preferences, etc. are stored in Firebase. Firebase Authentication and RTDB are used for this purpose.
 - This brings the user to the Trending News tab (where breaking news for the chosen country is displayed).
 - The other tabs are Search Tab, Personalized News Tab and Profile Tab.
 - The user can choose preferred news section from Profile Tab (currently, there these seven topics are covered: Exclusive, Health, Business, Entertainment, Sports and Technology). These sections can be visited from the Personalized (For Me) Tab *.
