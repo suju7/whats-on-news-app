@@ -8,6 +8,7 @@ The app uses [Firebase](https://firebase.google.com/docs/guides) products for ba
 Google's recommended [MVVM architecture](https://youtu.be/_T4zjIEkGOM?t=97), [Android Jetpack libraries](https://developer.android.com/jetpack#architecture-components) and [Material Design](https://material.io/develop/android) have been used for following best practices and providing the best user experience.
 
 **You can try out the app by installing <a href="app/src/main/res/apk/app-debug.apk" download>this APK</a>.** *(It does not contain any malicious code, of course.)*
+<br/><br/>
 
 ## Workflow 
 
@@ -20,6 +21,37 @@ Google's recommended [MVVM architecture](https://youtu.be/_T4zjIEkGOM?t=97), [An
 - Each news opens up in a web view format when clicked to show a more detailed content.
 
 Note: *The user may find news in different languages sometimes under topics in the Personalized (For Me) and Search News sections. This is because I'm using a free tier from News Api.*
+<br/>
+<br/>
+<br/>
+
+## Screenshots
+<br/>
+
+- **Tabs**
+
+<img src="app/src/main/res/screenshots/trending_tab.jpeg" alt="alt text" width="200"> |<img src="app/src/main/res/screenshots/search_tab.jpeg" alt="alt text" width="200">|<img src="app/src/main/res/screenshots/personalized_tab.jpeg" alt="alt text" width="200"> |<img src="app/src/main/res/screenshots/profile_tab.jpeg" alt="alt text" width="200">
+|:-:|:-:|:-:|:-:|
+|**Trending Tab**|**Search Tab**|**Personalized Tab**|**Profile Tab**|
+
+
+<br/>
+
+- **Login and Sign up**
+
+<img src="app/src/main/res/screenshots/login.jpeg" alt="alt text" width="200"> |<img src="app/src/main/res/screenshots/sign_up.jpeg" alt="alt text" width="200"> |
+|:-:|:-:|
+|**Login**|**SignUp**|
+
+<br/>
+
+- **Screenshots of Other Fragments**
+
+<img src="app/src/main/res/screenshots/saved_news.jpeg" alt="alt text" width="200"> |<img src="app/src/main/res/screenshots/settings.jpeg" alt="alt text" width="200"> |<img src="app/src/main/res/screenshots/personalized_tab_section.jpeg" alt="alt text" width="200">
+|:-:|:-:|:-:|
+|**Profile -> Saved News (Bookmarked Articles)**|**Profile -> Settings**|**Personalized -> Particular Section**|
+
+<br/><br/>
 
 ## Future development ideas...
 
