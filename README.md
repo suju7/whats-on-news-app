@@ -55,6 +55,6 @@ Note: *The user may find news in different languages sometimes under topics in t
 
 ## Future development ideas...
 
-Here are some thoughts on further improving the app.
+Here are some thoughts on further improving the app. (You are also welcome to fork this project and experiment with it.)
 - Building a community of readers who can discuss about these news articles among themselves. This can provide a healthy debate about fresh topics they encounter.
 - A journalist section for enthusiasts who are willing to pitch in about events from their zone. Also, keeping score of these folks through a star-based system to ensure the credibility of the news they deliver.
